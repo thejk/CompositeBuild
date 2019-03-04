@@ -1,0 +1,14 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        minSdkVersion 19
+        versionCode 1
+        versionName '1.0'
+    }
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.12'
+}

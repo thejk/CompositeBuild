@@ -1,0 +1,15 @@
+plugins {
+    id 'cpp-library'
+    id 'cpp-unit-test'
+}
+
+library {
+    linkage = [Linkage.STATIC]
+
+    publicHeaders {
+        from 'src/main/cpp'
+    }
+}
+
+unitTest {
+}

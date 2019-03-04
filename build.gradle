@@ -1,0 +1,26 @@
+wrapper {
+    gradleVersion = '4.10.2'
+}
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.3.1'
+    }
+}
+
+subprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task('test') {
+    dependsOn "app:testReleaseUnitTest"
+    dependsOn gradle.includedBuild('native').task(':common:runTest')
+}

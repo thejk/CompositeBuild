@@ -1,0 +1,17 @@
+wrapper {
+    gradleVersion = '4.10.2'
+}
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+}
+
+subprojects {
+    buildscript {
+        repositories {
+            jcenter()
+        }
+    }
+}
