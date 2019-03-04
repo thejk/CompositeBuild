@@ -9,4 +9,4 @@ Expected result:
 Gradle sync succeeds
 
 Actual result:
-Gradle sync fails with any error message
+IDE error with java.lang.AssertionError: Already disposed: Module: 'app'
